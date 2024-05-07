@@ -14,5 +14,5 @@
 
 - src: git@github.com:DmitryIll/ansible-lighthouse-role.git
   scm: git
-  # version: "1.0.1"  
+  version: "1.0.2"  
   name: lighthouse  
