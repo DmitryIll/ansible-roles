@@ -2,7 +2,7 @@
 - name: Install Clickhouse
   hosts: click-srv
   roles:
-    - clichouse
+    - clickhouse
 
   # handlers:
   #   - name: Start clickhouse service
