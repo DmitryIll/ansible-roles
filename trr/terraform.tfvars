@@ -16,7 +16,7 @@ vm=[
       cmd =[
         "chmod 600 /root/.ssh/id_ed25519",
         "ssh-keyscan -H click-srv >> /root/.ssh/known_hosts",
-        "git clone https://github.com/DmitryIll/ansible-ispolzovanie-3.git",
+        "git clone https://github.com/DmitryIll/ansible-roles.git",
         "sudo apt-add-repository -y ppa:ansible/ansible",
         "sudo apt update",
         "sudo apt install -y ansible",
