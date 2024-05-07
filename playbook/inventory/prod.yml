@@ -1,0 +1,14 @@
+---
+  clickhouse:
+    hosts:
+      click-srv:
+        ansible_ssh_user: root 
+        # ansible_connection: docker
+      vector:
+        ansible_ssh_user: root 
+        # ansible_connection: docker
+      lighthouse:
+        ansible_ssh_user: root 
+        # ansible_connection: docker
+
+  
