@@ -4,7 +4,15 @@
 
 1. * Необязательно. Познакомьтесь с [LightHouse](https://youtu.be/ymlrNlaHzIY?t=929).
 2. Создайте два пустых публичных репозитория в любом своём проекте: vector-role и lighthouse-role.
+
+Создал:
+https://github.com/DmitryIll/ansible-lighthouse-role
+https://github.com/DmitryIll/ansible-vector-role 
+
+
 3. Добавьте публичную часть своего ключа к своему профилю на GitHub.
+
+Добавил.
 
 ## Основная часть
 
@@ -25,12 +33,48 @@
        version: "1.13"
        name: clickhouse 
    ```
+Создал, только отступы скорректировал.
+
 
 2. При помощи `ansible-galaxy` скачайте себе эту роль.
+
+Скачал:
+
+```
+ansible-galaxy install -r requirements.yml -p roles
+```
+
 3. Создайте новый каталог с ролью при помощи `ansible-galaxy role init vector-role`.
+
+Сначала подключил репозиторий git:
+
+```
+git clone https://github.com/DmitryIll/ansible-vector-role
+```
+
+Создал в отдельной папке внутри репозитория на ВМ с ansbile:
+
+```
+ansible-galaxy role init vector-role
+```
+![alt text](image.png)
+
+Потом запушил в репозиторий удаленный.
+Но, запушить через ssh ключ (не понял почему) -  не получилось, поэтому я создал персональный токен и использовал его - для пуша с ВМ.
+
+Далее затянул код на ПК, и на нем доработал код для роли.
+
 4. На основе tasks из старого playbook заполните новую role. Разнесите переменные между `vars` и `default`. 
+
+Выполнил.
+
 5. Перенести нужные шаблоны конфигов в `templates`.
+
+Для вектора  нет шаблонов.
+
 6. Опишите в `README.md` обе роли и их параметры. Пример качественной документации ansible role [по ссылке](https://github.com/cloudalchemy/ansible-prometheus).
+
+
 7. Повторите шаги 3–6 для LightHouse. Помните, что одна роль должна настраивать один продукт.
 8. Выложите все roles в репозитории. Проставьте теги, используя семантическую нумерацию. Добавьте roles в `requirements.yml` в playbook.
 9. Переработайте playbook на использование roles. Не забудьте про зависимости LightHouse и возможности совмещения `roles` с `tasks`.

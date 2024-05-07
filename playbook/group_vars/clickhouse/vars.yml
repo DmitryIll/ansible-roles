@@ -6,6 +6,6 @@ clickhouse_packages:
   - clickhouse-server
   - clickhouse-common-static
 
-vector_version: "0.37.1"
+# vector_version: "0.37.1"
 
 # https://packages.clickhouse.com/rpm/stable/clickhouse-common-static-21.1.9.41-2.x86_64.rpm
