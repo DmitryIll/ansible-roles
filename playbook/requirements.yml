@@ -9,3 +9,8 @@
 - src: git@github.com:DmitryIll/ansible-vector-role.git
   scm: git
   name: vector
+
+
+- src: git@github.com:DmitryIll/ansible-lighthouse-role.git
+  scm: git
+  name: lighthouse  
