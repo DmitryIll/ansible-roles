@@ -74,12 +74,42 @@ ansible-galaxy role init vector-role
 
 6. Опишите в `README.md` обе роли и их параметры. Пример качественной документации ansible role [по ссылке](https://github.com/cloudalchemy/ansible-prometheus).
 
+Описал для роли вектор.
 
 7. Повторите шаги 3–6 для LightHouse. Помните, что одна роль должна настраивать один продукт.
+
+Повторил. Создал роль для LightHouse и т.д.
+
 8. Выложите все roles в репозитории. Проставьте теги, используя семантическую нумерацию. Добавьте roles в `requirements.yml` в playbook.
+
+Поставил.
+
 9. Переработайте playbook на использование roles. Не забудьте про зависимости LightHouse и возможности совмещения `roles` с `tasks`.
+
+Выполнил.
+
 10. Выложите playbook в репозиторий.
+
+Выложил.
+
 11. В ответе дайте ссылки на оба репозитория с roles и одну ссылку на репозиторий с playbook.
+
+
+https://github.com/DmitryIll/ansible-lighthouse-role.git
+https://github.com/DmitryIll/ansible-vector-role.git 
+
+https://github.com/DmitryIll/ansible-roles/blob/main/README.md 
+
+Для выполнения ползено обновить роли из репозиториев:
+
+```
+ansible-galaxy install -r requirements.yml -p roles --force
+```
+и запустить:
+
+```
+ansible-playbook -i inventory/prod.yml site.yml
+```
 
 ---
 
