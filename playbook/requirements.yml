@@ -8,9 +8,11 @@
 # - src: git@github.com:AlexeySetevoi/ansible-clickhouse.git 
 - src: git@github.com:DmitryIll/ansible-vector-role.git
   scm: git
+  version: "1.0.0"  
   name: vector
 
 
 - src: git@github.com:DmitryIll/ansible-lighthouse-role.git
   scm: git
+  version: "1.0.0"  
   name: lighthouse  
