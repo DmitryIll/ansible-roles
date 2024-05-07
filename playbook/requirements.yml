@@ -6,6 +6,6 @@
 
 
 # - src: git@github.com:AlexeySetevoi/ansible-clickhouse.git 
- - src: git@github.com:DmitryIll/ansible-vector-role.git
+- src: git@github.com:DmitryIll/ansible-vector-role.git
   scm: git
   name: vector
