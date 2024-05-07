@@ -70,7 +70,7 @@ ansible-galaxy role init vector-role
 
 5. Перенести нужные шаблоны конфигов в `templates`.
 
-Для вектора  нет шаблонов.
+Сделал.
 
 6. Опишите в `README.md` обе роли и их параметры. Пример качественной документации ansible role [по ссылке](https://github.com/cloudalchemy/ansible-prometheus).
 
@@ -110,6 +110,8 @@ ansible-galaxy install -r requirements.yml -p roles --force
 ```
 ansible-playbook -i inventory/prod.yml site.yml
 ```
+
+![alt text](image-1.png)
 
 ---
 
