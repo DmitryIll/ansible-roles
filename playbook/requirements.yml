@@ -3,3 +3,9 @@
   scm: git
   version: "1.13"
   name: clickhouse 
+
+
+# - src: git@github.com:AlexeySetevoi/ansible-clickhouse.git 
+ - src: git@github.com:DmitryIll/ansible-vector-role.git
+  scm: git
+  name: vector
